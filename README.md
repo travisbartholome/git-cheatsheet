@@ -10,6 +10,12 @@ Just a small sheet to hold the Git commands I forget on a semi-regular basis.
 
     - Often followed by `git push -f origin master` which forces an override of an early commit that has already been pushed.
 
+## Logs
+
+- `git log -<n>` - Display the <n> most recent commits in a repository
+
+    - E.g., `git log -3` will display the 3 most recent commits
+
 ## Remotes
 
 - `git push origin [BRANCH-NAME]` - Used to push commits to a particular (usually new) branch.
