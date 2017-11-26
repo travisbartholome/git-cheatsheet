@@ -16,6 +16,8 @@ Just a small sheet to hold the Git commands I forget on a semi-regular basis.
 
     - E.g., `git log -3` will display the 3 most recent commits
 
+- `git log --oneline` - Convenient one-line output for each commit
+
 ## Remotes
 
 - `git push origin [BRANCH-NAME]` - Used to push commits to a particular (usually new) branch.
