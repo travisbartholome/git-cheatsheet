@@ -33,3 +33,13 @@ Just a small sheet to hold the Git commands I forget on a semi-regular basis.
 - `git pull --rebase upstream master` - Use this to bring your local fork up to date with upstream before making new changes.
 
     - Note that you need to set the main repo as upstream before doing this. Use `git remote add upstream [BASE-REPO-URL]`
+
+## Tagging
+
+- `git tag -a v1.0 -m "Tag message"` - Tags the version specified (in this case, 1.0)
+
+    - Also signs and includes a short message
+
+- `git tag` - When run without arguments, just lists all existing tags
+
+- `git push origin --tags` - Push tags to remote (by default, tags aren't included in pushes)
