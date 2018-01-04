@@ -18,6 +18,8 @@ Just a small sheet to hold the Git commands I forget on a semi-regular basis.
 
 - `git log --oneline` - Convenient one-line output for each commit
 
+- `git log tag1..tag2` - Log all commits between the two given tags
+
 ## Remotes
 
 - `git push origin [BRANCH-NAME]` - Used to push commits to a particular (usually new) branch.
@@ -43,3 +45,5 @@ Just a small sheet to hold the Git commands I forget on a semi-regular basis.
 - `git tag` - When run without arguments, just lists all existing tags
 
 - `git push origin --tags` - Push tags to remote (by default, tags aren't included in pushes)
+
+- `git log tag1..tag2` - Log all commits between the two given tags
