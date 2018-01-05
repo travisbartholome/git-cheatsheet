@@ -10,6 +10,8 @@ Just a small sheet to hold the Git commands I forget on a semi-regular basis.
 
     - Often followed by `git push -f origin master` which forces an override of an early commit that has already been pushed.
 
+- `git commit -m "Commit title" -m "Commit description..."` - Shorthand/hackish way to add a long commit description
+
 ## Logs
 
 - `git log -<n>` - Display the <n> most recent commits in a repository
