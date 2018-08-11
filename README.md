@@ -12,6 +12,16 @@ Just a small sheet to hold the Git commands I forget on a semi-regular basis.
 
 - `git commit -m "Commit title" -m "Commit description..."` - Shorthand/hackish way to add a long commit description
 
+- `git commit -m "Message" -e` - Edit extended commit message in the terminal editor
+
+- `git add -p` - Add hunks of a file at a time, interactively
+
+- `git checkout [FILENAME]` - Reset/revert a single modified file to the version stored at HEAD
+
+    - (Used for uncommitted changes in your working tree)
+
+    - Use `git checkout -- [FILENAME]` if the filename is the same as a branch name
+
 ## Logs
 
 - `git log -<n>` - Display the <n> most recent commits in a repository
@@ -24,9 +34,11 @@ Just a small sheet to hold the Git commands I forget on a semi-regular basis.
 
 ## Remotes
 
-- `git push origin [BRANCH-NAME]` - Used to push commits to a particular (usually new) branch.
+- `git push [-u] origin [BRANCH-NAME]` - Used to push commits to a particular (usually new) branch.
 
     - Usually used for the first push after `git checkout -b [BRANCH-NAME]`.
+
+    - `-u` sets the new remote branch as upstream for the local branch
 
 - `git remote add origin [YOUR-REPO-URL]` - Use this to set your remote repo as origin for a local repo.
 
@@ -49,3 +61,15 @@ Just a small sheet to hold the Git commands I forget on a semi-regular basis.
 - `git push origin --tags` - Push tags to remote (by default, tags aren't included in pushes)
 
 - `git log tag1..tag2` - Log all commits between the two given tags
+
+## Merging
+
+- `git merge --continue` - Continue a merge after resolving conflicts
+
+- `git merge --abort` - If a merge goes horribly wrong, this should cleanly revert to the pre-merge state.
+
+## Stashes
+
+- `git stash` and `git stash pop` - Store a dirty working tree and restore stored changes, respectively
+
+- `git stash push -m "Message"` - Stash changes with a particular description
