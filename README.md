@@ -31,6 +31,8 @@ Just a small sheet to hold the Git commands I forget on a semi-regular basis.
 - `git reflog` - Shows the history of actions on a repository (commits, merges, checkouts, etc.)
 
     - Useful if you need to find a place to which you can reset (in order to revert an unwanted change). For that use case, you'd find the hashcode of the event/state that you wanted to restore in the reflog, then use `git reset --hard [HASHCODE]` to do a **hard revert** back to that state.
+    
+- `git log --graph --decorate --pretty=oneline --abbrev-commit` - Generate a history graph for the repo
 
 - `git log --oneline` - Convenient one-line output for each commit
 
