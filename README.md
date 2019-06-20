@@ -22,6 +22,14 @@ Just a small sheet to hold the Git commands I forget on a semi-regular basis.
 
     - Use `git checkout -- [FILENAME]` if the filename is the same as a branch name
 
+## Branches
+
+- `git checkout -b [BRANCHNAME]` - Create a new branch off of your currently checked-out branch.
+
+- `git checkout --track [REMOTE]/[BRANCH]` - Checkout a branch from the specified remote.
+
+    - For example, it might be something like `git checkout --track origin/add-formatting`
+
 ## Logs
 
 - `git log -<n>` - Display the <n> most recent commits in a repository
@@ -45,6 +53,8 @@ Foreword: it's probably best to avoid extensive history editing on branches that
 - `git rebase -i HEAD~<n>` - Probably the easiest general-purpose way to adjust commit history on the current branch. Follow the instructions in the edit file to adjust history as desired by changing the type of each commit. Note that commits can be reordered and will be replayed from top to bottom.
 
     - Example: to squash the last 5 commits into one, you could use `git rebase -i HEAD~5`; in the editor, change the command for the last 4 commits to `squash` (or `s`) instead of `pick`.
+    
+    - Could also use a hash instead of `HEAD~<n>`, to jump to a specific point in the reflog
 
 ## Remotes
 
