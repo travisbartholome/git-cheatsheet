@@ -55,6 +55,14 @@ Foreword: it's probably best to avoid extensive history editing on branches that
     - Example: to squash the last 5 commits into one, you could use `git rebase -i HEAD~5`; in the editor, change the command for the last 4 commits to `squash` (or `s`) instead of `pick`.
     
     - Could also use a hash instead of `HEAD~<n>`, to jump to a specific point in the reflog
+    
+- `git rebase --onto [TARGET] [COMMIT-BEFORE] [BRANCH]` - Useful for doing a sort of copy-paste maneuver with a set of commits/changes.
+
+    - Note: `COMMIT-BEFORE` is called `upstream` in the git docs. For me, it's easier to think about that as being the last commit which will **not** be moved during the rebase, while everything after it **will** be moved.
+    
+    - Both `TARGET` and `COMMIT-BEFORE` can be SHA hashes, which is useful for quickly finding which commits you want to rebase off of.
+    
+    - Honestly, the [git-rebase docs](https://git-scm.com/docs/git-rebase) are probably a must-read for this one, and they provide nice examples.
 
 ## Remotes
 
