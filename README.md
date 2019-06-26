@@ -29,6 +29,12 @@ Just a small sheet to hold the Git commands I forget on a semi-regular basis.
 - `git checkout --track [REMOTE]/[BRANCH]` - Checkout a branch from the specified remote.
 
     - For example, it might be something like `git checkout --track origin/add-formatting`
+    
+- `git branch --unset-upstream` - Unset the upstream info from the current branch.
+
+    - Useful if you want to push a local branch to a new (currently nonexistent) remote branch, but the local branch is already tracking a different upstream branch. Would follow with `git push -u origin [NEW-BRANCH]`.
+
+    - Optionally, `git branch --unset-upstream [BRANCH]`
 
 ## Logs
 
